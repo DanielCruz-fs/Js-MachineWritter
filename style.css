@@ -1,0 +1,43 @@
+body { 
+    background-image: url(https://images.unsplash.com/photo-1507128514311-5cc22ae7462c?ixlib=rb-0.3.5&s=fea7018aa9d03aea7d7794a3cd2e0b3c&auto=format&fit=crop&w=1350&q=80) ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+}
+#intro-content h5, h2{
+    font-family: 'Courgette', cursive;
+    color: whitesmoke;
+}
+#rule-content h6{
+    font-family: 'Nanum Pen Script', cursive;
+    color: darkgray;
+}
+.key-word {
+    color:teal;
+    font-size: 70px;
+    margin-top: -40px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+#main-input{
+    padding: 20px;
+    background: rgba(34,34,34,0.75);
+    margin-top: -70px;
+    border-radius: 20px;   
+}
+input[type=text] {
+    color: white;
+    font-size: 500px;
+}
+#message{
+    color: red;
+    margin-top: -56px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+#instruction-content{
+    background: rgba(34,34,34,0.75);
+    font-family: 'Nanum Pen Script', cursive;
+    color: white;
+    border-radius: 20px; 
+}

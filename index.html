@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Nanum+Pen+Script|Ruslan+Display" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col m12 s12 center-align" id="intro-content">
+                    <h2>WordTimmer</h2>
+                    <h5>Let's see how fast can you type.</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m12 s12 center-align" id="rule-content">
+                    <h6>Type the given word within <strong id="seconds">5</strong> seconds!!!</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m12 s12 center-align" id="main-content">
+                    <p id="current-word" class="key-word animated infinite flash"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m8 offset-m2" id="main-input">
+                    <input id="input_text" type="text" data-length="100" class="word-input" autofocus>
+                    <label for="input_text">Start Typing!!!</label>
+                </div>
+                <div class="col s12 m8 offset-m2" id="message">
+                    
+                </div>
+            </div>
+            <div class="row center-align">
+                <div class="col m6 s6">
+                    <div class="chip">
+                        <img src="https://banner2.kisspng.com/20180224/jtq/kisspng-alarm-clock-icon-blue-alarm-clock-5a921881659542.6481278515195239694161.jpg" alt="Contact Person">
+                        Time Left: <strong id="time">0</strong>
+                    </div>
+                </div>
+                <div class="col m6 s6">
+                    <div class="chip">
+                        <img src="https://banner2.kisspng.com/20180224/jtq/kisspng-alarm-clock-icon-blue-alarm-clock-5a921881659542.6481278515195239694161.jpg" alt="Contact Person">
+                        Score: <strong id="score">0</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m8 offset-m2 center-align" id="instruction-content">
+                    <p class="flow-text">Instructions: Type each word in the given amount of seconds to score.
+                        To play again, just type the currennt word. Your score will reset.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+            
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('input#input_text').characterCounter();
+        });
+    </script>
+  </body>
+</html>
